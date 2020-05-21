@@ -1,4 +1,4 @@
-﻿package com.xiaoqing.game;
+package com.xiaoqing.game;
 
 import static org.junit.Assert.*;
 
