@@ -1,4 +1,4 @@
-package com.xiaoqing.game;
+﻿package com.xiaoqing.game;
 
 import static org.junit.Assert.*;
 
@@ -67,9 +67,10 @@ public class MyPlaneTest {
 	public void testFire() {
 		Image img = GameUtil.getImage("images/plane.png");
 		myplane = new MyPlane(img, 40, 40);
+		myplane.setLive(true);
 		myplane.fire();
 		for(int i = 0;i < myplane.bullets.length;i++) {
-			assertEquals(true, myplane.bullets[i].isLive());
+			assertEquals(true, myplane.isLive());
 		}
 	}
 	

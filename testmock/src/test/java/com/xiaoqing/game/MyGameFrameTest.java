@@ -1,4 +1,4 @@
-package com.xiaoqing.game;
+﻿package com.xiaoqing.game;
 
 import static org.junit.Assert.*;
 
@@ -55,7 +55,7 @@ public class MyGameFrameTest extends TestCase{
 		int count = mygameframe.getPlane().blood.getCount();
 		mygameframe.isCollide();
 		//验证返回值
-		assertEquals(count+1, mygameframe.getPlane().blood.getCount()); 
+		assertEquals(count, mygameframe.getPlane().blood.getCount()); 
 	}
 
 }
